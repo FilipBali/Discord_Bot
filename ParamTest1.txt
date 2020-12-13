@@ -1,0 +1,35 @@
+-----------------------------------------------------------------------------------------
+                                   HELP MESSAGE                                          
+                                                                                         
+Description: This is Echo Bot for Discord software.                                      
+             Implementation using C/C++ programming languages.                           
+             Purpose of this bot is repeating every message in #isa-bot channel          
+             from other Discord users.                                                   
+                                                                                         
+             Messages from other Bots will NOT be repeated!                              
+             Bot user is classified as user who has in Discord nickname a word "bot".  
+             (Checking is case sensitive!)                                               
+             Example: ----------------------                                             
+                      | Nickname | Is Bot? |                                             
+                      ----------------------                                             
+                      |  Robot   |   YES   |                                             
+                      |  ROBOT   |   NO    |                                             
+                      |  RO_bot  |   YES   |                                             
+                      |  Bottle  |   No    |                                             
+                      |  bottle  |   YES   |                                             
+                      |  isa_bot |   YES   |                                             
+                      ----------------------                                             
+                                                                                         
+Usage: ./isabot [-h|--help] [-v|--verbose] -t <bot_access_token>                         
+                                                                                         
+ -> Where: Arguments in [] brackets are optional.                                        
+           Arguments in WITHOUT brackets are required.                                   
+                                                                                         
+    [-h|--help] -> Prints help message and program will be terminated.                   
+    [-v|--verbose] -> Prints details about every repeated message to stdout.             
+    -t <bot_access_token> -> Discord Bot token which specified which Discord Bot is used.
+                             Can be found at https://discord.com/developers/applications 
+                                                                                         
+                                                                                         
+            !!! WARNING: IMPLEMENTATION IS LIMITED TO ONE SERVER !!!                     
+-----------------------------------------------------------------------------------------
